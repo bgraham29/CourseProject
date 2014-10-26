@@ -13,7 +13,7 @@ Next, a factor indicating whether the data are from the test group or the traini
 The variables in each column are named using the features information provided in the zipped files.
 
 
-Variables that record the mean and standard deviation are identified and a smaller dataset is created containing only these measurements, along with the subject ids, activity types, group. The activity codes are converted from numeric values to text descriptions according to the information provided in the zipped files.
+Variables that record the mean and standard deviation are identified (that is, any variable with "mean" or "std" in the variable name is included), and a smaller dataset is created containing only these measurements, along with the subject ids, activity types, group. The activity codes are converted from numeric values to text descriptions according to the information provided in the zipped files.
 
 To determine the average measurement for the retained variables by subject and activity, the data are first reshaped into a four-column format of id, activity, variable name, and measurement. This is used to summarise means for each of the measurement, which is output in a four-column format
 
