@@ -2,22 +2,22 @@
 
 Data sets were downloaded from the UCI Learning Repository http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones) on October 25, 2014.
 
-The  code reads in training data, test data, and the associated labels for the data types, assuming that these files have already been downloaded and unzipped into your working directory.
+The  code reads in training data, test data, and the associated labels for the variables, subjects, and activities, assuming that these files have already been downloaded and unzipped into your working directory.
 
-First, the text files are read in using different object for the data, labels, feature names, and identification numbers
+First, the text files are read into different objects for the data, labels, feature (variable) names, activity names, and identification numbers.
 
 The labels for the activities and the subject identifiers as given in the text files are combined with the data for each set (i.e. training and test data).
 
 Next, a factor indicating whether the data are from the test group or the training group is added onto each data frame. This is not needed for the current assignment, but prevents loss of information about the group assignment. The data frames are merged together with a row bind.
 
-The variables in each column are named using the features information provided in the zipped files.
+The variables in each column are given column names using the provided features file, as these variable names are descriptive.
 
 
-Variables that record the mean and standard deviation are identified (that is, any variable with "mean" or "std" in the variable name is included), and a smaller dataset is created containing only these measurements, along with the subject ids, activity types, group. The activity codes are converted from numeric values to text descriptions according to the information provided in the zipped files.
+Variables that record the mean and standard deviation are identified (that is, any variable with "mean" or "std" in the variable name is included), and a smaller dataset is created containing only these measurements, along with the subject ids, activity types, and group. The activity codes are converted from numeric values to text descriptions according to the information provided in the provided activites files.
 
-To determine the average measurement for the retained variables by subject and activity, the data are first reshaped into a four-column format of id, activity, variable name, and measurement. This is used to summarise means for each of the measurement, which is output in a four-column format
+To determine the average measurement for the retained variables by subject and activity, the data are first reshaped into a four-column format listing id, activity, variable name, and measurement. This is used to summarise means for each measurement by subject id and activity, which is output in a four-column format.
 
-Finally, transform the four-column format into a table form and write to a text file.
+Finally, the four-column format is transformed into a table form listing the subject id in the first column, the activity in the second column, and each mean in the following columns. This is written to a text file.
 
 
 
