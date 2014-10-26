@@ -43,7 +43,7 @@ The set of variables that were estimated from these signals are:
 
 
 
-### The variables in the tidy data set are:
+## The variables in the tidy data set are:
 
 id - the identification number for the volunteer from whom data were collected
 
@@ -55,35 +55,38 @@ Activity - a factor vector indicating the activity that was performed
 * Standing
 * Laying
 
-## Measurements (all variables in the tidy data set are given as the mean for each subject / activity combination
+### Measurements (all variables in the tidy data set are given as the mean for each subject / activity combination)
 **Variables are all normalized and bounded within [-1, 1]**
 
 #### Time domain body accelerometer signals for the three axes:
-means:	
+Means:	
 * tBodyAcc-mean()-X 
 * tBodyAcc-mean()-Y 
-* tBodyAcc-mean()-Z 
-standard deviations:
+* tBodyAcc-mean()-Z
+
+Standard deviations:
 * tBodyAcc-std()-X 
 * tBodyAcc-std()-Y 
 * tBodyAcc-std()-Z 
 
 #### Time domain gravity acceleration for the three axes:
-means:
+Means:
 * tGravityAcc-mean()-X 
 * tGravityAcc-mean()-Y 
 * tGravityAcc-mean()-Z 
-standard deviations:
+
+Standard deviations:
 * tGravityAcc-std()-X 
 * tGravityAcc-std()-Y 
 * tGravityAcc-std()-Z 
 
 #### Jerk signals derived from body linear accleration and angular velocity for acceleromater signals on the three axes (time domain):
-means:
+Means:
 * tBodyAccJerk-mean()-X 
 * tBodyAccJerk-mean()-Y 
 * tBodyAccJerk-mean()-Z 
-standard deviations:
+
+Standard deviations:
 * tBodyAccJerk-std()-X 
 * tBodyAccJerk-std()-Y 
 * tBodyAccJerk-std()-Z 
@@ -93,6 +96,7 @@ Means:
 * tBodyGyro-mean()-X 
 * tBodyGyro-mean()-Y 
 * tBodyGyro-mean()-Z 
+
 Standard deviations:
 * tBodyGyro-std()-X 
 * tBodyGyro-std()-Y 
@@ -103,6 +107,7 @@ Means:
 * tBodyGyroJerk-mean()-X 
 * tBodyGyroJerk-mean()-Y 
 * tBodyGyroJerk-mean()-Z 
+
 Standard deviations:
 * tBodyGyroJerk-std()-X 
 * tBodyGyroJerk-std()-Y 
@@ -132,31 +137,37 @@ Body gyroscope jerk magnitude (time domain)
 
 #### Fast Fourier transforms applied to signals (frequency domain)
 Frequency domain body accelerometer
+
 Means:
 * fBodyAcc-mean()-X
 * fBodyAcc-mean()-Y
 * fBodyAcc-mean()-Z
+
 Standard deviations:
 * fBodyAcc-std()-X
 * fBodyAcc-std()-Y
 * fBodyAcc-std()-Z
 
 Frequency domain body accelerometer jerk:
+
 Means:
 * fBodyAccJerk-mean()-X
 * fBodyAccJerk-mean()-Y
 * fBodyAccJerk-mean()-Z
-Standard deviation:
+
+Standard deviations:
 * fBodyAccJerk-std()-X
 * fBodyAccJerk-std()-Y
 * fBodyAccJerk-std()-Z
 
 Frequency domain body gyroscope signals:
-Mean:
+
+Means:
 * fBodyGyro-mean()-X
 * fBodyGyro-mean()-Y
 * fBodyGyro-mean()-Z
-Standard deviation:
+
+Standard deviations:
 * fBodyGyro-std()-X
 * fBodyGyro-std()-Y
 * fBodyGyro-std()-Z
@@ -165,12 +176,9 @@ Standard deviation:
 Body accelerometer magnitude (frequency domain):
 * fBodyAccMag-mean()
 * fBodyAccMag-std()
-
 * fBodyBodyAccJerkMag-mean()
 * fBodyBodyAccJerkMag-std()
-
 * fBodyBodyGyroMag-mean()
 * fBodyBodyGyroMag-std()
-
 * fBodyBodyGyroJerkMag-mean()
 * fBodyBodyGyroJerkMag-std()
