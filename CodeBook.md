@@ -1,11 +1,11 @@
-### Code Book
+# Code Book
 
 This Code Book is modified from the features information provided by the UCI Machine Learning website. The list of variables is modified to include only those variables that 
 are present in the final "tidy" data set.
 
 
 Feature Selection 
-=================
+*****************
 
 The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
 
@@ -16,169 +16,162 @@ Finally a Fast Fourier Transform (FFT) was applied to some of these signals prod
 These signals were used to estimate variables of the feature vector for each pattern:  
 '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
 
-tBodyAcc-XYZ
-tGravityAcc-XYZ
-tBodyAccJerk-XYZ
-tBodyGyro-XYZ
-tBodyGyroJerk-XYZ
-tBodyAccMag
-tGravityAccMag
-tBodyAccJerkMag
-tBodyGyroMag
-tBodyGyroJerkMag
-fBodyAcc-XYZ
-fBodyAccJerk-XYZ
-fBodyGyro-XYZ
-fBodyAccMag
-fBodyAccJerkMag
-fBodyGyroMag
-fBodyGyroJerkMag
+*tBodyAcc-XYZ
+*tGravityAcc-XYZ
+*tBodyAccJerk-XYZ
+*tBodyGyro-XYZ
+*tBodyGyroJerk-XYZ
+*tBodyAccMag
+*tGravityAccMag
+*tBodyAccJerkMag
+*tBodyGyroMag
+*tBodyGyroJerkMag
+*fBodyAcc-XYZ
+*fBodyAccJerk-XYZ
+*fBodyGyro-XYZ
+*fBodyAccMag
+*fBodyAccJerkMag
+*fBodyGyroMag
+*fBodyGyroJerkMag
 
 The set of variables that were estimated from these signals are: 
 
-mean(): Mean value
-std(): Standard deviation
+*mean(): Mean value
+*std(): Standard deviation
 
 < other variables were deleted from the final data set >
 
 
 
-# The variables in the tidy data set are:
+### The variables in the tidy data set are:
 
 id - the identification number for the volunteer from whom data were collected
 
 Activity - a factor vector indicating the activity that was performed
-	Walking
-	walking upstairs
-	walking downstairs
-	sitting
-	standing
-	laying
+*Walking
+*walking upstairs
+*walking downstairs
+*sitting
+*standing
+*laying
 
-## Measurements (all variables in the tidy data set are given as the mean for each subject / activity combination
-# Variable are all normalized and bounded within [-1, 1]
+ Measurements (all variables in the tidy data set are given as the mean for each subject / activity combination
+*Variables are all normalized and bounded within [-1, 1]*
 
-# Time domain body accelerometer signals for the three axes:
+### Time domain body accelerometer signals for the three axes:
 means:	
-	tBodyAcc-mean()-X 
-	tBodyAcc-mean()-Y 
-	tBodyAcc-mean()-Z 
+*tBodyAcc-mean()-X 
+*tBodyAcc-mean()-Y 
+*tBodyAcc-mean()-Z 
 standard deviations:
-	tBodyAcc-std()-X 
-	tBodyAcc-std()-Y 
-	tBodyAcc-std()-Z 
+*tBodyAcc-std()-X 
+*tBodyAcc-std()-Y 
+*tBodyAcc-std()-Z 
 
-# Time domain gravity acceleration for the three axes:
+### Time domain gravity acceleration for the three axes:
 means:
-	tGravityAcc-mean()-X 
-	tGravityAcc-mean()-Y 
-	tGravityAcc-mean()-Z 
+*tGravityAcc-mean()-X 
+*tGravityAcc-mean()-Y 
+*tGravityAcc-mean()-Z 
 standard deviations:
-	tGravityAcc-std()-X 
-	tGravityAcc-std()-Y 
-	tGravityAcc-std()-Z 
+*tGravityAcc-std()-X 
+*tGravityAcc-std()-Y 
+*tGravityAcc-std()-Z 
 
-# Jerk signals derived from body linear accleration and angular velocity for acceleromater signals on the three axes (time domain):
+### Jerk signals derived from body linear accleration and angular velocity for acceleromater signals on the three axes (time domain):
 means:
-	tBodyAccJerk-mean()-X 
-	tBodyAccJerk-mean()-Y 
-	tBodyAccJerk-mean()-Z 
+*tBodyAccJerk-mean()-X 
+*tBodyAccJerk-mean()-Y 
+*tBodyAccJerk-mean()-Z 
 standard deviations:
-	tBodyAccJerk-std()-X 
-	tBodyAccJerk-std()-Y 
-	tBodyAccJerk-std()-Z 
+*tBodyAccJerk-std()-X 
+*tBodyAccJerk-std()-Y 
+*tBodyAccJerk-std()-Z 
 
-# Time domain body gyroscope signals for the three axes:
+### Time domain body gyroscope signals for the three axes:
 Means:
-	tBodyGyro-mean()-X 
-	tBodyGyro-mean()-Y 
-	tBodyGyro-mean()-Z 
+*tBodyGyro-mean()-X 
+*tBodyGyro-mean()-Y 
+*tBodyGyro-mean()-Z 
 Standard deviations:
-	tBodyGyro-std()-X 
-	tBodyGyro-std()-Y 
-	tBodyGyro-std()-Z 
+*tBodyGyro-std()-X 
+*tBodyGyro-std()-Y 
+*tBodyGyro-std()-Z 
 
 
-# Jerk signals derived from body linear accleration and angular velocity for gyroscope signals on the three axes (time domain):
+### Jerk signals derived from body linear accleration and angular velocity for gyroscope signals on the three axes (time domain):
 Means:
-	tBodyGyroJerk-mean()-X 
-	tBodyGyroJerk-mean()-Y 
-	tBodyGyroJerk-mean()-Z 
+*tBodyGyroJerk-mean()-X 
+*tBodyGyroJerk-mean()-Y 
+*tBodyGyroJerk-mean()-Z 
 Standard deviations:
-	tBodyGyroJerk-std()-X 
-	tBodyGyroJerk-std()-Y 
-	tBodyGyroJerk-std()-Z 
+*tBodyGyroJerk-std()-X 
+*tBodyGyroJerk-std()-Y 
+*tBodyGyroJerk-std()-Z 
 
-# Time domain magnitude of three-dimensional signals as calculated using the Eucliean norm
+### Time domain magnitude of three-dimensional signals as calculated using the Eucliean norm
 
 Body accelerometer magnitude (time domain)
-	tBodyAccMag-mean() 
-	tBodyAccMag-std() 
+*tBodyAccMag-mean() 
+*tBodyAccMag-std() 
 
 Gravity accelerometer magnitude (time domain)
-	tGravityAccMag-mean() 
-	tGravityAccMag-std() 
+*tGravityAccMag-mean() 
+*tGravityAccMag-std() 
 
 Body accelerometer jerk magnitude (time domain)
-	tBodyAccJerkMag-mean() 
-	tBodyAccJerkMag-std() 
+*tBodyAccJerkMag-mean() 
+*tBodyAccJerkMag-std() 
 
 Body Gyroscope magnitude (time domain)
-	tBodyGyroMag-mean() 
-	tBodyGyroMag-std() 
+*tBodyGyroMag-mean() 
+*tBodyGyroMag-std() 
 
 Body gyroscope jerk magnitude (time domain)
-	tBodyGyroJerkMag-mean()
-	tBodyGyroJerkMag-std()
+*tBodyGyroJerkMag-mean()
+*tBodyGyroJerkMag-std()
 
-#3 Fast Fourier transforms applied to signals (frequency domain)
+### Fast Fourier transforms applied to signals (frequency domain)
 Frequency domain body accelerometer
 Means:
-	fBodyAcc-mean()-X
-	fBodyAcc-mean()-Y
-	fBodyAcc-mean()-Z
+*fBodyAcc-mean()-X
+*fBodyAcc-mean()-Y
+*fBodyAcc-mean()-Z
 Standard deviations:
-	fBodyAcc-std()-X
-	fBodyAcc-std()-Y
-	fBodyAcc-std()-Z
+*fBodyAcc-std()-X
+*fBodyAcc-std()-Y
+*fBodyAcc-std()-Z
 
 Frequency domain body accelerometer jerk:
 Means:
-	fBodyAccJerk-mean()-X
-	fBodyAccJerk-mean()-Y
-	fBodyAccJerk-mean()-Z
+*fBodyAccJerk-mean()-X
+*fBodyAccJerk-mean()-Y
+*fBodyAccJerk-mean()-Z
 Standard deviation:
-	fBodyAccJerk-std()-X
-	fBodyAccJerk-std()-Y
-	fBodyAccJerk-std()-Z
+*fBodyAccJerk-std()-X
+*fBodyAccJerk-std()-Y
+*fBodyAccJerk-std()-Z
 
 Frequency domain body gyroscope signals:
 Mean:
-	fBodyGyro-mean()-X
-	fBodyGyro-mean()-Y
-	fBodyGyro-mean()-Z
+*fBodyGyro-mean()-X
+*fBodyGyro-mean()-Y
+*fBodyGyro-mean()-Z
 Standard deviation:
-	fBodyGyro-std()-X
-	fBodyGyro-std()-Y
-	fBodyGyro-std()-Z
+*fBodyGyro-std()-X
+*fBodyGyro-std()-Y
+*fBodyGyro-std()-Z
 
-# Time domain magnitude of three-dimensional signals as calculated using the Eucliean norm
-Body accelerometer magnitude (frequency domain)
+### Time domain magnitude of three-dimensional signals as calculated using the Eucliean norm
+Body accelerometer magnitude (frequency domain):
+*fBodyAccMag-mean()
+*fBodyAccMag-std()
 
-	fBodyAccMag-mean()
-	fBodyAccMag-std()
+*fBodyBodyAccJerkMag-mean()
+*fBodyBodyAccJerkMag-std()
 
+*fBodyBodyGyroMag-mean()
+*fBodyBodyGyroMag-std()
 
-	fBodyBodyAccJerkMag-mean()
-	fBodyBodyAccJerkMag-std()
-
-
-	fBodyBodyGyroMag-mean()
-	fBodyBodyGyroMag-std()
-
-
-	fBodyBodyGyroJerkMag-mean()
-	fBodyBodyGyroJerkMag-std()
-
-
-
+*fBodyBodyGyroJerkMag-mean()
+*fBodyBodyGyroJerkMag-std()
